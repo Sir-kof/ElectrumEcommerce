@@ -206,9 +206,14 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
-  flex-direction: column;
-  align-items: center;
 }
+@media (max-width: 425px) {
+  .products-grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .deal-container {
   background-image: url("../../img/deal_headset.png");
   background-repeat: no-repeat;
